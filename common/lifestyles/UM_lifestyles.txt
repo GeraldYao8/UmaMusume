@@ -1,0 +1,9 @@
+escape_lifestyle = {
+
+	is_valid = {
+		has_trait = UM_uma_ability
+	}
+
+	base_xp_gain = 25
+	xp_per_level = 1500
+}

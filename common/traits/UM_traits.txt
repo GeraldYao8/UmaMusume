@@ -1,0 +1,14 @@
+UM_uma_ability = {
+	life_expectancy = 20
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = UM_uma_ability_desc
+			}
+			desc = UM_uma_ability_character_desc
+		}
+	}
+}
