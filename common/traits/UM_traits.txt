@@ -1,14 +1,99 @@
 UM_uma_ability = {
-	life_expectancy = 20
+	
+	same_opinion = 10
+
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = UM_uma_ability_desc
+				desc = trait_UM_uma_ability_desc
 			}
-			desc = UM_uma_ability_character_desc
+			desc = trait_UM_uma_ability_character_desc
 		}
 	}
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = uma_qm.dds
+			}
+			triggered_desc = {
+				trigger = {	uma_rating_value >= 20 }
+				desc = uma_ss.dds
+			}
+			triggered_desc = {
+				trigger = {	uma_rating_value >= 16 }
+				desc = uma_s.dds
+			}
+			triggered_desc = {
+				trigger = {	uma_rating_value >= 12 }
+				desc = uma_a.dds
+			}
+			triggered_desc = {
+				trigger = {	uma_rating_value >= 8 }
+				desc = uma_b.dds
+			}
+			triggered_desc = {
+				trigger = {	uma_rating_value >= 4 }
+				desc = uma_c.dds
+			}
+			triggered_desc = {
+				trigger = {	uma_rating_value >= 0 }
+				desc = uma_d.dds
+			}
+		}
+	}
+
+	tracks = {
+		speed = {
+			25 = { movement_speed = 0.1 }
+			50 = { movement_speed = 0.1 }
+			75 = { movement_speed = 0.2 }
+			100 = { movement_speed = 0.3 }
+		}
+		strength = {
+			25 = { prowess = 1 }
+			50 = { prowess = 1 }
+			75 = { prowess = 2 }
+			100 = { prowess = 3 }
+		}
+		stamina = {
+			25 = { health = 0.05 }
+			50 = { health = 0.05 }
+			75 = { health = 0.1 }
+			100 = { health = 0.15 }
+		}
+		perseverance = {
+			25 = {
+				stress_loss_mult = 0.05
+				stress_gain_mult = -0.05
+			}
+			50 = {
+				stress_loss_mult = 0.05
+				stress_gain_mult = -0.05
+			}
+			75 = {
+				stress_loss_mult = 0.1
+				stress_gain_mult = -0.1
+			}
+			100 = {
+				stress_loss_mult = 0.15
+				stress_gain_mult = -0.15
+			}
+		}
+		intelligence = {
+			25 = { monthly_lifestyle_xp_gain_mult = 0.05 }
+			50 = { monthly_lifestyle_xp_gain_mult = 0.05 }
+			75 = { monthly_lifestyle_xp_gain_mult = 0.1 }
+			100 = { monthly_lifestyle_xp_gain_mult = 0.15 }
+		}
+	}
+
 }

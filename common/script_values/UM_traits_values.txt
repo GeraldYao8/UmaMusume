@@ -1,0 +1,228 @@
+uma_rating_value = {
+	value = 0
+	add = uma_speed_rating_value
+	add = uma_strength_rating_value
+	add = uma_stamina_rating_value
+	add = uma_perseverance_rating_value
+	add = uma_intelligence_rating_value
+}
+
+uma_speed_rating_value = {
+	value = 0
+	if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = speed
+				value = 100
+			}
+			add = 6
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = speed
+				value >= 75
+			}
+			add = 4
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = speed
+				value >= 50
+			}
+			add = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = speed
+				value >= 25
+			}
+			add = 1
+		}
+	}
+}
+
+uma_strength_rating_value = {
+	value = 0
+	if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = strength
+				value = 100
+			}
+			add = 6
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = strength
+				value >= 75
+			}
+			add = 420
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = strength
+				value >= 50
+			}
+			add = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = strength
+				value >= 25
+			}
+			add = 1
+		}
+	}
+}
+
+uma_stamina_rating_value = {
+	value = 0
+	if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = stamina
+				value = 100
+			}
+			add = 6
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = stamina
+				value >= 75
+			}
+			add = 4
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = stamina
+				value >= 50
+			}
+			add = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = stamina
+				value >= 25
+			}
+			add = 1
+		}
+	}
+}
+
+uma_perseverance_rating_value = {
+	value = 0
+	if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = perseverance
+				value = 100
+			}
+			add = 6
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = perseverance
+				value >= 75
+			}
+			add = 4
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = perseverance
+				value >= 50
+			}
+			add = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = perseverance
+				value >= 25
+			}
+			add = 1
+		}
+	}
+}
+
+uma_intelligence_rating_value = {
+	value = 0
+	if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = intelligence
+				value = 100
+			}
+			add = 6
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = intelligence
+				value >= 75
+			}
+			add = 4
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = intelligence
+				value >= 50
+			}
+			add = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_trait_xp = {
+				trait = UM_uma_ability
+				track = intelligence
+				value >= 25
+			}
+			add = 1
+		}
+	}
+}
